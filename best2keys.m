@@ -1,6 +1,6 @@
 f = fopen('input_plaintext.txt','r');
 c = textread('input_plaintext.txt','%s','delimiter','\n','whitespace','');
-in_hex = cellfun(@(l) l(1:2),c,'un',0);   %2 char input array cellcont
+in_hex = cellfun(@(l) l(1:2),c,'un',0);   %2 char input array
 in_dec = hex2dec(in_hex);     %input in hexadecimal
 measure = 1:10000;
 maxplots = zeros(10000,256);
